@@ -1,4 +1,1 @@
-# blueballoon
-<<<<<<< HEAD
-=======
-My second repository
+Blueballoons website
