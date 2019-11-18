@@ -1,0 +1,32 @@
+section {
+    height: 100%;
+}
+
+body {
+    background-color: #c4e479;
+}
+
+.box {
+    position: right;
+    display: inline-block;
+    width: 60%;
+    border: solid #540e5a 10px;
+    background-color:#d38825;
+    font-size: 28px;
+    font-weight: 900;
+    margin: 5px 0;
+    text-align: center;
+}
+
+.box:hover {
+    border: solid #fa1202 10px;
+    background-color:#23a3f8;
+    font-size: 2em;
+    font-stretch: expanded;
+}
+
+.box2:hover {
+    border: solid #1f7699 10px;
+    background-color: rgb(174, 201, 53);
+    font-size: 2em;
+}
