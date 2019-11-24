@@ -160,3 +160,14 @@ a:hover {
 .box7:hover {
     transform: translate(-100%)
 }
+
+.ball2 {
+    font-size: 14px;
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    border-radius: 60%;
+    margin-left: 20px;
+    background-color: aquamarine;
+    transform: scale(1.2) translate(100px) skew(20deg)
+}
