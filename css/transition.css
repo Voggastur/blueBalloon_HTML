@@ -1,11 +1,162 @@
-.box {
+.boxx {
+    display: inline-block;
     width: 50px;
     height: 50px;
     background-color: #bada55;
-    transition-property: width;
+    transition-property: width, background-color;
     transition-duration: 2s;
 }
 
-.box:hover {
+.boxx:hover {
     width: 150px;
+    background-color: #e84610;
+}
+
+a {
+    transition-property: background-color; color;
+    transition-duration: 1s;
+    transition-timing-function: ease-in-out;
+}
+
+a:hover {
+    background-color: #000;
+    color: white;
+}
+
+.ball {
+    width: 25px;
+    height: 25px;
+    border-radius: 100%;
+    margin: 0 auto;
+    position: relative;
+    background-color: #000;
+    animation-name: bounce;
+    animation-duration: .5s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+.ball:hover {
+    animation-play-state: paused;
+}
+
+@keyframes bounce {
+    from {
+        top: 200px;
+    }
+    to {
+        top: 400px;
+    }
+}
+
+.box {
+    font-size: 3em;
+    display: inline-block;
+    width: 50px;
+    height: 80px;
+    margin-left: 20px;
+    background-color: red;
+    transform: translate(200px, 200px);
+    transition-duration: .5s;
+}
+
+.box:hover {
+    transform: translate(200px, 150px);
+}
+
+.box2 {
+    font-size: 3em;
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    margin-left: 20px;
+    background-color: green;
+    transform: rotate(0deg);
+    transition-duration: 2s;
+    transition-property: transform;
+}
+
+.box2:hover {
+    transform: translate(0, 50px) rotate(45deg);
+}
+
+.box3 {
+    font-size: 3em;
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    margin-left: 20px;
+    background-color: #4f4fa7;
+    transform: skew(30deg);
+}
+
+.box4 {
+    font-size: 3em;
+    display: inline-block;
+    background-color: turquoise;
+    width: 50px;
+    height: 50px;
+    margin-left: 20px;
+    animation-name: rotor;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-timing-function: ease-in-out
+}
+
+@keyframes rotor {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.box5 {
+    font-size: 3em;
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    margin-left: 20px;
+    background-color: yellow;
+    transition-property: transform, background-color;
+    transition-duration: 1s;
+    transition-timing-function: ease-in-out;
+    transform: scale(1);
+}
+
+.box5:hover {
+    transform: scale(5);
+    background-color: green;
+}
+
+.box6 {
+    font-size: 3em;
+    display: inline-block;
+    width: 80px;
+    height: 80px;
+    margin-left: 20px;
+    background-color: orangered;
+    animation-name: rotor;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-direction: forwards;
+    animation-timing-function: ease-in-out;
+}
+
+.box7 {
+    font-size: 3em;
+    display: inline-block;
+    width: 80px;
+    height: 80px;
+    margin-left: 20px;
+    background-color: peru;
+    transition-property: transform;
+    transition-duration: 1s;
+}
+
+.box7:hover {
+    transform: translate(-100%)
 }
