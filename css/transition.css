@@ -19,56 +19,112 @@ button {
 .dropdownMenu {
     list-style: none;
     margin:0;
+    padding:0;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 25px;
+    z-index: -1;
+    width: 150px;
+    text-align: center;
+    box-shadow: 4px 8px 6px 0px rgba(54,4,54,1);
+    transform: translateY(-100%);
+    transition: transform .5s ease-in-out;
+}
+
+.dropdownLink {
+    text-decoration: none;
+    display: block;
+    background-color: #f9f9f9;
+    color: #4a4a4f;
+    padding: 10px 5px;
+    transition: background-color .5s ease-in-out, color .5s ease-in-out;
+}
+
+.dropdownLink:hover {
+    color: #f9f9f9;
+    background-color: #4a4a4f;
+}
+
+.dropdown {
+    width: 150px;
+    position: relative;
+}
+
+.dropdown:hover button {
+    background-color: #018ec5
+}
+
+.dropdown:hover .dropdownMenu {
+    transform:translateY(0);
 }
 
 .boxx {
     display: inline-block;
     width: 50px;
     height: 50px;
-    margin-top: 150px;
+    margin-top: 250px;
+    margin-left: 25px;
+    font-size: 1px;
+    color: #bada55;
     background-color: #bada55;
-    transition-property: width, background-color;
-    transition-duration: 2s;
+    transition-property: width, background-color, color, font-size;
+    transition-duration: 1s;
+    cursor:grab;
 }
 
 .boxx:hover {
     width: 400px;
     background-color: #e84610;
+    color: #000;
+    font-size: 40px;
 }
 
-a {
-    margin-top: 150px;
+.wiki {
+    text-decoration: none;
+    margin-top: 250px;
+    margin-left: 25px;
     transition-property: background-color; color;
     transition-duration: 1s;
     transition-timing-function: ease-in-out;
 }
 
-a:hover {
+.wiki:hover {
     background-color: #000;
     color: white;
 }
 
 .ball {
+    text-align: center;
+    font-size: 6px;
     width: 25px;
     height: 25px;
     border-radius: 100%;
-    margin: 0 auto;
+    margin-left: 50%;
     position: relative;
+    color: #000;
     background-color: #000;
     animation-name: bounce;
-    animation-duration: .5s;
+    animation-duration: 1s;
     animation-timing-function: ease-in-out;
     animation-iteration-count: infinite;
     animation-direction: alternate;
+    transition-property: transform, color, background-color;
+    transition-duration: .5s;
+    cursor: grab;
 }
 
 .ball:hover {
     animation-play-state: paused;
+    transform: scale(8);
+    color: orange;
+    z-index: 1;
+    background-color: darkorchid;
 }
 
 @keyframes bounce {
     from {
-        top: 100px;
+        top: -200px;
     }
     to {
         top: 200px;
@@ -83,6 +139,7 @@ a:hover {
     background-color: red;
     transform: translate(100px, 150px);
     transition-duration: .5s;
+    cursor:grab;
 }
 
 .box:hover {
@@ -97,12 +154,13 @@ a:hover {
     margin-left: 20px;
     background-color: green;
     transform: rotate(0deg);
-    transition-duration: 2s;
+    transition-duration: 1s;
     transition-property: transform;
+    cursor:pointer;
 }
 
 .box2:hover {
-    transform: translate(0, 50px) rotate(45deg);
+    transform: translate(0, 30px) rotate(180deg) scale(1.6);
 }
 
 .box3 {
@@ -112,7 +170,13 @@ a:hover {
     height: 50px;
     margin-left: 20px;
     background-color: #4f4fa7;
-    transform: skew(30deg);
+    transform: skew(20deg);
+    transition-property: transform;
+    transition-duration: 1s;
+}
+
+.box3:hover {
+    transform: skew(-50deg);
 }
 
 .box4 {
@@ -150,6 +214,7 @@ a:hover {
     transition-duration: 1s;
     transition-timing-function: ease-in-out;
     transform: scale(1);
+    cursor:move;
 }
 
 .box5:hover {
@@ -178,22 +243,37 @@ a:hover {
     height: 50px;
     margin-left: 20px;
     background-color: peru;
-    cursor: grab;
-    transition-property: transform;
+    cursor: cell;
+    transition-property: transform, background-color;
     transition-duration: 1s;
 }
 
 .box7:hover {
-    transform: translate(-100%)
+    transform: translate(100%);
+    background-color: brown;
 }
 
-.ball2 {
-    font-size: 14px;
+.box8 {
+    position:relative;
+    font-size: 3em;
     display: inline-block;
-    width: 150px;
-    height: 100px;
-    border-radius: 100%;
-    margin-left: 10px;
+    width: 40px;
+    height: 50px;
+    margin-left: 20px;
     background-color: aquamarine;
-    transform: scale(1.2) translate(100px) skew(20deg);
+    transform: scale(1.5) translate(0px, 50px) skew(0deg, 20deg);
+    animation-name: sideways;
+    animation-duration: 1s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+@keyframes sideways {
+    from {
+        left: -50px;
+    }
+    to {
+        left: 100px;
+    }
 }
