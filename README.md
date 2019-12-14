@@ -4,9 +4,9 @@ Welcome!
 
 This repository has been used for challenges on the Code Institute Full Stack Development Course
 
-Index is the only coherent finished project in here and it stacks up the technologies I will learn trough my course with two links to additional pages and technologies.
+Index is the only finished project in here and it lists the technologies I will learn trough my course with 6 linked pictures to wikipages and two navitems that links to 2 additional htmlpages with 6 technologies.
 
-Through practical experience, I enjoyed doing css for transition-interactive.html the most. It shows my first experiments with transitions and animations, which are also responsive to hover for various alternating transitions.
+Through practical experience, I enjoyed doing css with transitions the most. The transition-interactive.html shows my first experiments with transitions and animations, which have been made responsive to hover for alternating transitions.
 
 --! For Future Reference !--
 
