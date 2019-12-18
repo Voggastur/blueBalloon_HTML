@@ -2,11 +2,11 @@
 
 Welcome!
 
-This repository has been used for challenges on the Code Institute Full Stack Development Course
+This repository has been used for my practical study and challenges in the Code Institute Full Stack Development Course
 
-Index is the only finished project in here and it lists the technologies I will learn trough my course with 6 linked pictures to wikipages and two navitems that links to 2 additional htmlpages with 6 technologies.
+Index is the only finished project in here and it lists the technologies I will learn trough my course with links to wikipages.
 
-Through practical experience, I enjoyed doing css with transitions the most. The transition-interactive.html shows my first experiments with transitions and animations, which have been made responsive to hover for alternating transitions.
+Through practical experience, I enjoyed doing css with transitions the most. The transition-interactive.html shows my first experiments with transitions and animations, which have been made responsive to various transforms.
 
 --! For Future Reference !--
 
