@@ -2,7 +2,7 @@
 
 Welcome!
 
-This repository has been used in my studies in the Code Institute Full Stack Development Course
+This repository has been used in my studies in the Code Institute Full Stack Development Course.
 Only HTML and CSS has been used in this repo, and most pages contain single css animations
 
 Index is the only finished project in here and it lists the technologies I will learn trough my course
